@@ -7,8 +7,10 @@ import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -130,7 +132,20 @@ public class MainActivity extends AppCompatActivity {
                             builder.setPositiveButton("Go To Settings", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                  //startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                    startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                            Uri.fromParts("package", getPackageName(), null)));
+
+//                                    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+//                                    Uri uri = Uri.fromParts("package", getPackageName(), null);
+//                                    intent.setData(uri);
+//                                    startActivity(intent);
+
+//
+//                                    Intent callSettingIntent= new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
+//                                    startActivity(callSettingIntent);
+
+
 
                                 }
                             });
@@ -156,7 +171,10 @@ public class MainActivity extends AppCompatActivity {
                             builder.setPositiveButton("Go To Settings", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                  //  startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                    startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                            Uri.fromParts("package", getPackageName(), null)));
+
 
                                 }
                             });
@@ -185,7 +203,9 @@ public class MainActivity extends AppCompatActivity {
                             builder.setPositiveButton("Go To Settings", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                  //  startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                    startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                            Uri.fromParts("package", getPackageName(), null)));
 
                                 }
                             });
@@ -210,7 +230,9 @@ public class MainActivity extends AppCompatActivity {
                             builder.setPositiveButton("Go To Settings", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                  //  startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                    startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                            Uri.fromParts("package", getPackageName(), null)));
 
                                 }
                             });
@@ -330,7 +352,9 @@ public class MainActivity extends AppCompatActivity {
                             builder.setPositiveButton("Go To Settings", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                 //   startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                    startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                            Uri.fromParts("package", getPackageName(), null)));
 
                                 }
                             });
@@ -356,7 +380,9 @@ public class MainActivity extends AppCompatActivity {
                             builder.setPositiveButton("Go To Settings", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                  //  startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                    startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                            Uri.fromParts("package", getPackageName(), null)));
 
                                 }
                             });
@@ -387,7 +413,10 @@ public class MainActivity extends AppCompatActivity {
                             builder.setPositiveButton("Go To Settings", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                 //   startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                    startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                            Uri.fromParts("package", getPackageName(), null)));
+
 
                                 }
                             });
